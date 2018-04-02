@@ -32,9 +32,8 @@
 ########################################################################
 
 import os
-import Download
+import download
 import glob
-
 ########################################################################
 
 # Directory where you want to download and save the data-set.
@@ -54,7 +53,7 @@ def _read_text_file(path):
     It is returned as a single string where all lines are concatenated.
     """
 
-    with open(path, 'rt') as file:
+    with open(path, 'rt',encoding='utf8') as file:
         # Read a list of strings.
         lines = file.readlines()
 
